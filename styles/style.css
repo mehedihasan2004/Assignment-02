@@ -2,201 +2,258 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Poppins:wght@500;700&display=swap');
 
 /* ------------------------------  FONT STYLE ------------------------------ */
+* {
+    margin: 0;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
+    margin-top: 13vh;
 }
+
 
 
 /* ------------------------------ APPLY STYLE FOR [TOP-SECTION] ------------------------------ */
 .top-section {
     width: 90%;
-    height: 646px;
     border-radius: 30px;
     background-color: #161616;
     display: flex;
-    align-items: center;
-    margin-left: 180px;
+    margin-left: 5vw;
 }
 
+.top-section {}
 
 
 .informations {
     color: #FFFFFF;
-    width: 531px;
-    height: 424px;
-    margin-top: 100px;
-    margin-bottom: 111px;
-    margin-left: 106px;
+    padding-left: 5vw;
+    padding-top: 3vh;
+    width: 40%;
 }
 
 .top-title {
     font-weight: 700;
-    font-size: 35px;
+    font-size: 2rem;
 }
 
 .top-paragraph {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
+    padding-top: 2vh;
 }
 
 .top-button {
-    padding: 16px 25px;
-    background-color: #DD0000;
-    width: 150px;
-    height: 36px;
+    text-decoration: none;
+
+}
+
+.top-button div {
+    margin-top: 20px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    margin-top: 30px;
-}
-
-.top-button a {
+    width: 200px;
+    height: 50px;
     color: #FFFFFF;
-    text-decoration: none;
-    padding-right: 10px;
+    border-radius: 5px;
+    background-color: orangered;
 }
 
-.banner-image-1 {
+.top-button div h3 {
+    margin-right: 10px;
+
+}
+
+.banner-image-1 img {
+    width: 100%;
     position: relative;
-    top: 139px;
+    top: 0.8vh;
 }
 
-.banner-image-2 {
-    position: relative;
-    top: 139px;
-}
-
-/* ---------------------------- MIDDLE CONTAINER --------------------------------- */
-.conteiner {
+/* ===========================EXTRA================================= */
+.only-for-tab-mood {
+    margin-top: 5vh;
     display: flex;
-    margin-left: 180px;
-    margin-top: 130px;
-    gap: 30px;
+    justify-content: center;
 }
 
-/* --------------------------- APPLY STYLE FOE [MENU SECTION]----------------------------- */
-.menu {
-    background-color: #161616;
-
-    width: 312px;
-    height: 312px;
-}
-
-.items {
-    padding-top: 45px;
+.only-for-tab-mood-parent {
+    width: 60%;
     display: flex;
-    flex-direction: column;
-    row-gap: 70px;
+    justify-content: space-between;
+
+}
+
+.only-for-tab-mood-item {
+    width: 230px;
+    height: 64px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.item {}
+.only-for-tab-mood-heading {}
 
-.upcoming-match {
-    padding: 17px 39px;
-    font-weight: 500;
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
-    background-color: #FFFFFF;
-    border: 1px solid gray;
-    border-radius: 10px;
+/* ================================================== WEBSITE ONE PAGE STYLES =================================================== */
+
+
+.blogs {
+    display: flex;
+    margin-top: 15vh;
+    margin-left: 5vw;
 }
 
-.upcoming-match:hover {
-    background-color: tomato;
-}
-
-.all-group {
-    padding: 17px 79.5px;
-    font-weight: 500;
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
-    background-color: #FFFFFF;
-    border: 1px solid gray;
-    border-radius: 10px;
-}
-
-.all-group:hover {
-    background-color: aqua;
-}
-
-.blog {
-    padding: 17px 103.5px;
-    font-weight: 500;
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
-    background-color: #FFFFFF;
-    border: 1px solid gray;
-    border-radius: 10px;
-}
-
-.blog:hover {
-    background-color: aqua;
-}
-
-/* ------------------------------------- ALL MATCH STYLE ------------------------------------ */
-.all-matches {
+.teams {
+    margin-left: 2.5em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    gap: 3em;
 }
 
-
-.match {
+.main-box {
     width: 312px;
-    height: 362px;
-    box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.399);
+    height: 312px;
+    border-radius: 10px;
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.ancor-style {
+    text-decoration: none;
+    color: black;
+}
+
+.box-item:hover {
+    background-color: aqua;
+}
+
+.box-item {
+    width: 252px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: #FFFFFF;
     border-radius: 10px;
 }
 
-.transfer-button,
-.icons {
-    margin-top: 20px;
-    margin-left: 20px;
+.box-item a {
+    text-decoration: none;
+    color: black;
 }
 
-.about-match {
-    margin-left: 20px;
-    margin-top: 15px;
+.team {
+    height: 362px;
+    width: 312px;
+    box-shadow: 1px 1px grey;
+    border-radius: 10px;
+}
+
+.choose-button {
+    padding: 20px;
+}
+
+.about-team {
+    padding: 0 20px;
+}
+
+.time-feedback {
+    padding: 20px;
+    display: flex;
+}
+
+.time-icon,
+.comment-icon {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.time-icon p {
+    padding: 8px;
+}
+
+.comment-icon p {
+    padding: 8px;
 }
 
 
 
-.fa-clock {
-    margin-left: 10px;
+/* =========================================== WEBSITE PAGE TWO STYLES =================================================== */
+.mid-container {
+    display: flex;
+    margin-top: 20vh;
+    margin-left: 5vw;
 }
 
-.time {
-    margin-left: 4px;
-    margin-right: 15px;
+.playing-teams {
+    margin-left: 2vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5em;
 }
 
-.fa-message {
-    margin-left: 10px;
+.single-team {
+    width: 312px;
+    height: 242px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
-.comment-count {
-    margin-left: 4px;
+.team-flags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px;
+}
+
+.flag-vs h1 {
+    font-size: 20px;
+}
+
+.team-names,
+.play-time {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ------------------------------------- BUTTON ONLY FOR TAB MOOD -------------------------------------- */
+.optional-button {
+    margin-top: 7vh;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.optional-button-text {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 8px 15px;
+    color: #FFFFFF;
+    background-color: #DD0000;
+    border-radius: 5px;
+    border: none;
 }
 
 /* ---------------------------------------- FOOTER STYLE ADDED ------------------------------------- */
 footer {
-    width: 1600px;
-    height: 444px;
+    margin-top: 10vh;
     background-color: #161616;
-    border-radius: 10px;
+    width: 100%;
 }
 
 .goal {
-    padding-top: 80px;
+    padding-top: 10vh;
     display: flex;
     justify-content: center;
-
 }
 
 .footer-heading {
@@ -205,12 +262,10 @@ footer {
 }
 
 hr {
-    width: 1320px;
+    width: 100%;
     border: 2px solid rgba(255, 255, 255, 0.1);
-}
-
-nav {
-    margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul {
@@ -220,7 +275,7 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    margin: 5px 20px;
+    margin: 1em 3em;
 }
 
 nav ul li a {
@@ -231,7 +286,8 @@ nav ul li a {
 .social-media {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 4vh;
+    padding-bottom: 3vh;
 }
 
 .social-media a {
@@ -241,49 +297,126 @@ nav ul li a {
 
 
 
-
-/* ====================================== WEBSITE SECOND PAGE ========================================== */
-.future-matches {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-bottom: 130px;
-}
-
-.each-match {
-    width: 312px;
-    height: 242px;
-    border: 1px solid #80808085;
-    border-radius: 10px;
-}
-
-.flags {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 53px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.countrys {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
-}
-
-.countrys div {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.date-time {
-    display: flex;
-    justify-content: center;
+.only-for-tab-mood {
+    visibility: hidden;
 }
 
 
 /* ================================== MEDIA QUERY FOR TABLET ======================================= */
 
 @media only screen and (min-width: 768px) and (max-width : 1023px) {
-        {}
+
+    /* ---------------------PAGE ONE ------------------------- */
+    .top-title h1 {
+        font-size: 3vw;
+    }
+
+    .top-paragraph {
+        font-size: 1vw;
+    }
+
+    .banner-image-1 {
+        position: relative;
+        top: 0.6vh;
+    }
+
+    .jump {
+        margin: 5vh 0vh;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .blogs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0vh;
+    }
+
+    .teams {
+        margin-top: 8vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ------------------------------PAGE TWO-------------------------------- */
+    .mid-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2vh;
+    }
+
+    .playing-teams {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .optional-button {
+        visibility: visible;
+    }
+
+    .optional-button-text:hover {
+        padding: 10px 17px;
+    }
+
+    .nevigetions nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* ================================== MEDIA QUERY FOR MOBILE ======================================= */
+@media only screen and (min-width : 375px) and (max-width : 767px) {
+
+    /* ---------------------------- PAGE ONE------------------------------ */
+    .top-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-title {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .top-paragraph {
+        font-size: 0.6em;
+        width: 150px;
+        height: 30px;
+        padding: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .blogs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .teams {
+        margin-top: 6vh;
+        margin-left: 1vw;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* ------------------------------- PAGE TWO -------------------------------- */
+    .mid-container {
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .playing-teams {
+        margin-top: 6vh;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nevigetions nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
